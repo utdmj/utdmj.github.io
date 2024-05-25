@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>UTDMJ - Créations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venez admirer les bijoux fait en céramique par Virginie.">
+    <link rel="icon" type="image/png" href="img/main/icon.png" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg--grey">
+        <div class="nav flex">
+            <a href="index.html">
+            <div class="nav_img">
+                <img id="logo_desktop" class="logo" src="img/main/logo.png">
+                <img id="logo_mobile" class="logo" src="img/main/logo_mobile.png">
+
+            </div>
+            </a>
+            <nav class="nav_list">
+                <ul class="list">
+                    <li class="list_item"><a href="index.html">Accueil</a></li>
+                    <li class="list_item"><a href="creations.html">Créations</a></li>
+                    <li class="list_item"><a href="cours.html">Cours</a></li>
+                    <li class="list_item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav_mobile">
+                <img id="nav_list_open" onclick="navmobile(1)" class="nav_img--mobile" src="img/main/menu.svg" alt="" />
+                <img id="nav_list_close" onclick="navmobile(2)" class="nav_img--mobile nodisplay" src="img/main/cross.svg" alt="" />
+                <ul id="nav_list--mobile" class="list nodisplay">
+                    <li class="nav_list_item--mobile"><a href="index.html">Accueil</a></li>
+                    <li class="nav_list_item--mobile"><a href="creations.html">Créations</a></li>
+                    <li class="nav_list_item--mobile"><a href="cours.html">Cours</a></li>
+                    <li class="nav_list_item--mobile"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+         <h2 class="align-center section-title" style="margin-bottom=0;">Mon Univers</h2>
+        <section id="type" class="flex m-x-14">
+            <div class="type_item">
+                <div class="type_item_content">
+                    <h3>SECTION BIJOUX</h3>
+                    <a class="white_button" href="bijoux.html">DÉCOUVRIR</a>
+                </div>
+            </div>
+            <div class="type_item">
+                <div class="type_item_content">
+                    <h3>SECTION DECORATION</h3>
+                    <a class="white_button" href="decoration.html">DÉCOUVRIR</a>
+                </div>
+            </div>
+            <div class="type_item">
+                <div class="type_item_content">
+                    <h3>SECTION ART DE LA TABLE</h3>
+                    <a class="white_button" href="artdelatable.html">DÉCOUVRIR</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg--grey align-center">
+        <div class="footer_content">
+            <img src="img/main/logo2.png" class="footer_content_icon" />
+            <h2>Atelier de céramique</h2>
+            <a class="footer_content_rs" href=""><img src="img/main/facebook.png" class="" /></a>
+            <a class="footer_content_rs" href=""><img src="img/main/instagram.png" class="" /></a>
+        </div>
+        <p class="footer_copyright">©UnTourDansMonJardin - Webdesign par Clémence MARMION</p>
+    </footer>
+</body>
+
+<script>
+    function navmobile(nb) {
+        if (nb == 1) {
+            document.getElementById('nav_list_open').style.display = "none";;
+            document.getElementById('nav_list_close').style.display = "block";;
+            document.getElementById('nav_list--mobile').style.display = "block";;
+        } else {
+            document.getElementById('nav_list_open').style.display = "block";;
+            document.getElementById('nav_list_close').style.display = "none";;
+            document.getElementById('nav_list--mobile').style.display = "none";;
+        }
+    }
+
+</script>
+
+</html>

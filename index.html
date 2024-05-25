@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Un tour dans mon jardin</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Virginie vous invite à prendre des cours de poterie et de céramique, et apprendre les gestes et techniques pour fabriquer vos objets, avec différentes terres et cuissons.">
+    <link rel="icon" type="image/png" href="img/main/icon.png" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg--grey">
+        <div class="nav flex">
+            <a href="index.html">
+            <div class="nav_img">
+                <img id="logo_desktop" class="logo" src="img/main/logo.png">
+                <img id="logo_mobile" class="logo" src="img/main/logo_mobile.png">
+
+            </div>
+            </a>
+            <nav class="nav_list">
+                <ul class="list">
+                    <li class="list_item"><a href="index.html">Accueil</a></li>
+                    <li class="list_item"><a href="creations.html">Créations</a></li>
+                    <li class="list_item"><a href="cours.html">Cours</a></li>
+                    <li class="list_item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav_mobile">
+                <img id="nav_list_open" onclick="navmobile(1)" class="nav_img--mobile" src="img/main/menu.svg" alt="" />
+                <img id="nav_list_close" onclick="navmobile(2)" class="nav_img--mobile nodisplay" src="img/main/cross.svg" alt="" />
+                <ul id="nav_list--mobile" class="list nodisplay">
+                    <li class="nav_list_item--mobile"><a href="index.html">Accueil</a></li>
+                    <li class="nav_list_item--mobile"><a href="creations.html">Créations</a></li>
+                    <li class="nav_list_item--mobile"><a href="cours.html">Cours</a></li>
+                    <li class="nav_list_item--mobile"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="flex m-x-7">
+            <div class="about_img">
+                <img src="img/main/mainph.jpeg" alt="" />
+            </div>
+            <div class="about_content">
+                <img href="" alt="" />
+                <p>
+                    Bienvenue dans mon atelier, je m'appelle Virginie Bullier. J'ai débuté la poterie en 2015 comme activité de loisirs. Le coup de foudre... Assez rapidement, j'ai envisagé cette pratique comme une possibilité de reconversion professionnelle. J'ai multiplié les apprentissages (modelage et tournage). Pour confirmé mon projet de reconversion, j'ai partagé un atelier avec 2 céramistes afin de pouvoir m'exercer tous les jours et de me confronter à la réalité du métier.
+                    Une fois l'envie confirmée, j'ai entamé la construction de mon aterlier.
+                    Encore une étape essentielle : acheter mon propre tour et voilà ! <strong>UN TOUR DANS MON JARDIN</strong> allait bientôt voir le jour ...
+                </p>
+                <img href="" alt="" />
+            </div>
+        </section>
+        <h2 class="align-center section-title" style="margin-bottom=0;">Mon Univers</h2>
+        <section id="type" class="flex m-x-14">
+            <div class="type_item">
+                <div class="type_item_content">
+                    <h3>SECTION BIJOUX</h3>
+                    <a class="white_button" href="bijoux.html">DÉCOUVRIR</a>
+                </div>
+            </div>
+            <div class="type_item">
+                <div class="type_item_content">
+                    <h3>SECTION DECORATION</h3>
+                    <a class="white_button" href="decoration.html">DÉCOUVRIR</a>
+                </div>
+            </div>
+            <div class="type_item">
+                <div class="type_item_content">
+                    <h3>SECTION ART DE LA TABLE</h3>
+                    <a class="white_button" href="artdelatable.html">DÉCOUVRIR</a>
+                </div>
+            </div>
+        </section>
+        <h2 class="align-center section-title" style="margin-bottom=0;">Cours de Ceramique</h2>
+        <div class="work_line m-x-7">
+            <section id="work" class="align-center">
+                <img src="img/main/cours.jpeg" class="" />
+                <div class="white_button work_link">
+                    <a href="cours.html">COURS</a>
+                </div>
+            </section>
+        </div>
+        <h2 class="align-center section-title" style="margin-bottom=0;">Le lieu</h2>
+                <section id="experience" class="flex m-x-7">
+            <div class="experience_img">
+                <img src="img/main/atelier.jpeg" alt="" />
+            </div>
+            <div class="experience_content align-center">
+                <h2>La vie de l'atelier</h2>
+                <p>
+                    L’atelier, construit dans mon jardin en 2017 est idéalement situé au calme, en contraste des agitations de la ville. Cet environnement (la verdure, les oiseaux, les fleurs et le tilleul) est une inspiration à la création
+                </p>
+            </div>
+        </section>
+        <h2 class="align-center section-title" style="margin-bottom=0;">Avis</h2>
+        <p class="align-center">Mon atelier est sur google businesses, n'hesitez pas à voir ce qu'en pensent les gens! <br /><a href="contact.html">lien</a></p>
+    </main>
+    <footer class="bg--grey align-center">
+        <div class="footer_content">
+            <img src="img/main/logo2.png" class="footer_content_icon" />
+            <h2>Atelier de céramique</h2>
+            <a class="footer_content_rs" href=""><img src="img/main/facebook.png" class="" /></a>
+            <a class="footer_content_rs" href=""><img src="img/main/instagram.png" class="" /></a>
+        </div>
+        <p class="footer_copyright">©UnTourDansMonJardin - Webdesign par Clémence MARMION</p>
+    </footer>
+</body>
+<script>
+    function navmobile(nb) {
+        if (nb==1) {
+            document.getElementById('nav_list_open').style.display = "none";;
+            document.getElementById('nav_list_close').style.display = "block";;
+            document.getElementById('nav_list--mobile').style.display = "block";;
+        } else {
+            document.getElementById('nav_list_open').style.display = "block";;
+            document.getElementById('nav_list_close').style.display = "none";;
+            document.getElementById('nav_list--mobile').style.display = "none";;  
+        }
+    }
+
+</script>
+
+</html>
